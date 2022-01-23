@@ -22,6 +22,7 @@ body{
 }
 
 .arrow{
+    object-fit: cover;
     height:50px;
     animation: float2 2s alternate infinite;
     -webkit-transition: all 0.5s ease;
@@ -65,8 +66,8 @@ body{
     text-align: center;
     background-color: #fff;
     border-radius: 25px;
-    width:30vw;
-    height:60vh;
+    width:450px;
+    height:400px;
     margin:30px;
     opacity: 1;
     padding: 20px;
@@ -103,8 +104,8 @@ body{
     text-align: center;
     background-color: #fff;
     border-radius: 25px;
-    width:30vw;
-    height:30vh;
+    width:400px;
+    height:300px;
     margin:30px;
     opacity: 1;
     padding: 30px;
