@@ -1,6 +1,7 @@
 body{
     /* background-color: #000; */
     background: linear-gradient(45deg, rgb(14, 7, 53),black, rgb(36, 3, 49));
+    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -23,10 +24,10 @@ body{
 .astronaut{
     position: fixed;
     padding: 30px;
-    height: 50vh;
-    top:20%;
+    height: 70vh;
+    top:10%;
     right:10%;
-    /* margin:auto; */
+    margin:auto;
     animation: float 3s alternate infinite;
     z-index: -1;
     -webkit-transition: all 0.5s ease;
@@ -45,25 +46,42 @@ body{
     transition: all 0.5s ease;
 }
 
-.title{
+.container{
+    position: fixed;
+    height: 60vh;
+    top:15%;
+    left:10%;
+    margin:auto;
+    text-align: center;
     background-color: #fff;
     border-radius: 25px;
     width:30vw;
-    height:30vh;
+    height:60vh;
     margin:30px;
-    opacity: .7;
+    opacity: 1;
     padding: 20px;
- 
 }
 
-.details1{
-    background-color: #fff;
-    
+.details{
+    margin: 0;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    font-size: 12px;
 }
 
-.details2{
-    background-color: #fff;
-    
+
+.profile-image{
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-size: 20px;
 }
 
 .directions{
