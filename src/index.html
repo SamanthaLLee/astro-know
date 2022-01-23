@@ -10,20 +10,24 @@
 
 <body>
     <div class="stars"></div>
-    <div class="container">
+    <div class="default" id="default">
+        <h1><i>Who is this?</i></h1>
+        <p>According to __, diversity. Click the button below to meet an astronaut turning the tide.</p>
+        <img onclick="hide_prompt()" class="arrow" src="../static/arrow.png"></img>
+    </div>
+
+    <div class="container" id="container">
         <img id='image' class='profile-image' src=""></img>
         <div class="details">
-            <p class='title'>My name is <span id='name'><a id='wiki' href=''></a></span>.</p>
+            <h2 class='title'>My name is <span id='name'><a id='wiki' href=''></a></span>.</h2>
             <p id='summary'></p>
         </div>
-
-
+        <img onclick="hide_prompt()" class="arrow" src="../static/arrow.png"></img>
 
     </div>
-    <div class="details1"></div>
-    <div class="details2"></div>
-    <div class="directions"></div>
+
     <img class="astronaut" src="../static/astronaut.png"></img>
+
 </body>
 
 </html>

@@ -21,6 +21,16 @@ body{
     z-index: -1;
 }
 
+.arrow{
+    height:50px;
+    animation: float2 2s alternate infinite;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .astronaut{
     position: fixed;
     padding: 30px;
@@ -84,9 +94,35 @@ body{
     font-size: 20px;
 }
 
-.directions{
+.default{
+    position: fixed;
+    height: 60vh;
+    top:15%;
+    left:10%;
+    margin:auto;
+    text-align: center;
     background-color: #fff;
+    border-radius: 25px;
+    width:30vw;
+    height:30vh;
+    margin:30px;
+    opacity: 1;
+    padding: 30px;
+}
 
+.hide {
+  opacity: 0;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
+.show {
+  opacity: 1;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
 }
 
 @keyframes zoom {
@@ -104,6 +140,19 @@ body{
     }
     50%  { 
         transform: translate(0, 30px); 
+    }
+    100%   { 
+        transform: translate(0, -0px);
+    }
+
+}
+
+@keyframes float2 {
+    0% { 
+        transform: translate(0,  0px); 
+    }
+    50%  { 
+        transform: translate(0, 10px); 
     }
     100%   { 
         transform: translate(0, -0px);
